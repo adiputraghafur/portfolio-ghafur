@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghafururrohim Adi Putra</title>
+    <meta
+      name="description"
+      content="Portofolio Ghafururrohim Adi Putra: Calon Lulusan Teknik Industri UNTIRTA dengan keahlian koding vanilla, desain sistem, dan 3D modelling."
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <nav class="container">
+        <div class="logo">
+          <a href="#home">Ghafur</a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="menu-toggle"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#portfolio">Portofolio</a></li>
+          <li><a href="#experience">Pengalaman</a></li>
+          <li><a href="#contact">Kontak</a></li>
+          <li>
+            <a
+              href="assets/docs/CV-Ghafururrohim Adi Putra.pdf"
+              class="cta-button"
+              download
+              >Unduh CV</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="hero-section">
+        <div class="hero-slider-bg">
+          <img
+            src="assets/images/home1.jpg"
+            alt="Background Hero Visual 1"
+            class="slider-image active"
+          />
+          <img
+            src="assets/images/home2.jpg"
+            alt="Background Hero Visual 2"
+            class="slider-image"
+          />
+          <img
+            src="assets/images/home3.jpg"
+            alt="Background Hero Visual 3"
+            class="slider-image"
+          />
+          <img
+            src="assets/images/home4.jpg"
+            alt="Background Hero Visual 4"
+            class="slider-image"
+          />
+        </div>
+        <div class="hero-content-overlay">
+          <div class="profile-photo">
+            <img
+              src="assets/images/profile.jpg"
+              alt="Foto Profil Saya"
+              loading="lazy"
+            />
+          </div>
+          <div class="hero-text">
+            <p class="greeting">Halo, Saya Ghafururrohim Adi Putra</p>
+            <h1>Industrial Engineer | 3D Modeler | System Analyst</h1>
+            <p class="tagline">
+              **Menerjemahkan efisiensi proses industri menjadi solusi digital
+              yang fungsional dan visual yang menawan.**
+            </p>
+            <a href="#portfolio" class="cta-main-button">Lihat Proyek Saya</a>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about-section">
+        <h2>Tentang Saya & Skill Stack</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Saya adalah Calon Lulusan Teknik Industri UNTIRTA (Sidang pada 30
+              Juni 2025) dengan fokus pada **analisis sistem** dan **efisiensi
+              proses**. Latar belakang akademis ini saya padukan dengan keahlian
+              praktis dalam desain teknis dan koding vanilla.
+            </p>
+            <p>
+              saya mahir dalam visualisasi dan pemodelan presisi menggunakan
+              **Blender**, **Autodesk AutoCAD dan Autodesk Inventor**, dan pada
+              saat yang sama, Saya mampu membangun sistem dan antarmuka (**HTML,
+              CSS, JavaScript, PHP**) dari nol.
+            </p>
+            <p>
+              Saya bersemangat untuk menggabungkan keahlian teknis dan analitis
+              saya guna menciptakan solusi yang tidak hanya efisien tetapi juga
+              estetis.
+            </p>
+          </div>
+          <div class="skills-stack">
+            <h3>Keahlian</h3>
+            <div class="skills-list">
+              <div class="skill-item" data-skill="ti">
+                Teknik Industri (Process Mapping, Analisis)
+              </div>
+              <div class="skill-item" data-skill="cad">
+                Autodesk Inventor & AutoCAD (CAD Manufaktur)
+              </div>
+              <div class="skill-item" data-skill="3d">
+                Blender (3D Modelling & Rendering)
+              </div>
+              <div class="skill-item" data-skill="html">
+                HTML5 & CSS3 (Vanilla & Responsive Design)
+              </div>
+              <div class="skill-item" data-skill="js">
+                JavaScript (Vanilla DOM Manipulation)
+              </div>
+              <div class="skill-item" data-skill="php">
+                PHP (Backend Sederhana)
+              </div>
+              <div class="skill-item" data-skill="audio">
+                FL Studio (Sound Design & Mixing)
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="portfolio-section">
+        <h2>Portofolio Pilihan</h2>
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="3d-cad">3D / CAD</button>
+          <button class="filter-btn" data-filter="coding">Koding</button>
+          <button class="filter-btn" data-filter="art-music">
+            Seni / Musik
+          </button>
+        </div>
+        <div class="portfolio-grid">
+          <article class="portfolio-item" data-category="coding">
+            <img
+              src="assets/images/projectcoding1.jpg"
+              alt="Perancangan Sistem Informasi Unit Katering (Skripsi)"
+            />
+            <h3>
+              Perancangan Sistem Informasi Unit Katering Berbasis Website
+              (Skripsi)
+            </h3>
+            <p class="category">System Analysis & PHP Mockup</p>
+            <a href="#" class="view-details-btn">Lihat Detail Proses</a>
+          </article>
+          <article class="portfolio-item" data-category="coding">
+            <img
+              src="assets/images/projectcoding2.jpg"
+              alt="Perancangan Sistem Informasi Portofolio (Proyek Pribadi)"
+            />
+            <h3>Perancangan Sistem Informasi Portofolio (Proyek Pribadi)</h3>
+            <p class="category">Pembuatan Website Statis</p>
+            <a href="#" class="view-details-btn">Lihat Detail Proses</a>
+          </article>
+          <article class="portfolio-item" data-category="3d-cad">
+            <img
+              src="assets/images/projectcad1.jpg"
+              alt="Assembly & Gambar Teknik (Autodesk Inventor)"
+            />
+            <h3>Assembly & Gambar Teknik (Autodesk Inventor)</h3>
+            <p class="category">Presisi CAD Manufaktur</p>
+            <a href="#" class="view-details-btn">Lihat Detail</a>
+          </article>
+          <article class="portfolio-item" data-category="3d-cad">
+            <img
+              src="assets/images/project3d1.jpg"
+              alt="Produk Visualisasi (Blender)"
+            />
+            <h3>Produk Visualisasi (Blender)</h3>
+            <p class="category">Visualisasi Produk & Rendering Realistis</p>
+            <a href="#" class="view-details-btn">Lihat Galeri</a>
+          </article>
+          <article class="portfolio-item" data-category="art-music">
+            <img
+              src="assets/images/projectmusic1.jpg"
+              alt="Music & Sound Design (FL Studio)"
+            />
+            <h3>Music & Sound Design (FL Studio)</h3>
+            <p class="category">Kreativitas Audio dan Produksi Musik</p>
+            <a
+              href="https://soundcloud.com/ghxfvr_adi"
+              target="_blank"
+              class="view-details-btn"
+              >Dengarkan di Soundcloud</a
+            >
+          </article>
+        </div>
+      </section>
+      <section id="experience" class="experience-section">
+        <h2>Pengalaman Organisai, Validasi Kompetensi & Pendidikan</h2>
+        <div class="timeline-container">
+          <div class="timeline-item">
+            <h3>Pelatihan AutoCAD Manufaktur UPTD Banten</h3>
+            <span class="timeline-date">2025</span>
+            <p class="role">Validasi Keahlian CAD Manufaktur</p>
+            <p>
+              Pelatihan intensif selama 5 minggu yang mencakup pembuatan gambar
+              teknik dan assembly menggunakan Autodesk AutoCAD dan Inventor,
+              pelatihan tersebut menguatkan dasar saya dalam "Design for
+              Manufacturing".
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>Anggota Departemen Olahraga & Kesenian HMTI</h3>
+            <span class="timeline-date">2019-2020</span>
+            <p class="role">Pengalaman Organisasi</p>
+            <p>
+              Sebagai anggota departemen, saya berkontribusi dalam
+              penyelenggaraan acara olahraga dan seni, mengasah keterampilan
+              kerja tim dan manajemen acara.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>Petugas KPPS Pemilu & Pilkada serta Petugas Coklit Pilkada</h3>
+            <span class="timeline-date">2024</span>
+            <p class="role">Pengalaman Sosial & Administratif</p>
+            <p>
+              Bertugas sebagai petugas KPPS dan melakukan pencocokan data
+              pemilih, pengalaman berulang sebagai Coklit dan Anggota KPPS,
+              menunjukkan ketelitian yang tinggi dalam pemutakhiran data dan
+              kepatuhan mutlak terhadap prosedur di bawah tekanan waktu.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>Teknik Industri UNTIRTA</h3>
+            <span class="timeline-date">2018-2025</span>
+            <p class="role">Pendidikan</p>
+            <p>
+              Lulus Sidang Skripsi: 30 Juni 2025. **Status: Mengurus
+              SKL/Ijazah**. Fokus utama pada perancangan sistem, optimasi, dan
+              rekayasa kualitas. Siap menerapkan pola pikir sistematis dalam
+              dunia kerja.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact-section">
+        <h2>Mari Berdiskusi & Berkolaborasi</h2>
+        <p>
+          Tertarik Berdiskusi? Hubungi saya melalui email atau lihat profil
+          profesional saya
+        </p>
+        <div class="contact-methods">
+          <a href="mailto:ghadiput@gmail.com" class="contact-button"
+            >Kirim Email</a
+          >
+        </div>
+        <form action="" method="post" class="contact-form">
+          <input type="text" name="name" placeholder="Nama Anda" required />
+          <input
+            type="email"
+            name="_replyto"
+            placeholder="Email Anda"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Pesan Anda"
+            rows="5"
+            required
+          ></textarea>
+          <button type="submit" class="cta-form-submit">Kirim Pesan</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2025 Ghafururrohim Adi Putra. Dibangun menggunakan 100% Vanilla
+        HTML, CSS & JavaScript.
+      </p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/ghxfvr/" target="_blank"
+          >Instagram</a
+        >
+        |
+        <a href="https://soundcloud.com/ghxfvr_adi" target="_blank"
+          >Soundcloud</a
+        >
+      </div>
+    </footer>
+    <script src="assets/js/script.js" defer></script>
+  </body>
+</html>
