@@ -6,7 +6,7 @@ const startScreen = document.getElementById("start-screen");
 const gameOverScreen = document.getElementById("game-over-screen");
 const restartButton = document.getElementById("restart-button");
 const leaderboardEndpoint =
-  "https://script.google.com/macros/s/AKfycby56gOeWKG6V5_hxwLRWQItebqTQAV5URekYah_NVo2jkiegOQRvVADIyPWOIU7JXUemA/exec";
+  "https://script.google.com/macros/s/AKfycbzMdYH_P6S0EZ6ijcTCO0o-1FhBWBUjGe74Y_7U2wt6nDogqSV5S6ZDdSK8nDXsQzFa-w/exec";
 const obstacleVariation = [
   [{ type: "small", width: 15 }],
   [{ type: "large", width: 20 }],
