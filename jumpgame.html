@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1, initial-scale=1.0" />
+    <title>Endless Jump Game</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/jumpgame.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <nav class="container">
+        <div class="logo">
+          <a href="index.html">Ghafur</a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="menu-toggle"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links-menu">
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="game-main">
+      <section id="jump-game-section">
+        <h1 class="game-title">Jump Jump!!!</h1>
+        <div id="game-container">
+          <div id="dino" class="running"></div>
+          <div id="score">Score: 0</div>
+          <div id="high-score">High Score: 0</div>
+          <div id="start-screen" class="active">
+            <p>Tekan **Space** atau **Ketuk** untuk Memulai</p>
+          </div>
+          <div id="game-over-screen">
+            <h2>Game Over</h2>
+            <p id="final-score"></p>
+            <button id="restart-button">Restart</button>
+            <div id="leaderboard"></div>
+          </div>
+        </div>
+        <p class="game-instruction">
+          Gunakan tombol **SPACE** (atau ketuk layar) untuk melompat.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2025 Ghafururrohim Adi Putra. Dibangun menggunakan 100% Vanilla
+        HTML, CSS & JavaScript.
+      </p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/ghxfvr/" target="_blank"
+          >Instagram</a
+        >
+        |
+        <a href="https://soundcloud.com/ghxfvr_adi" target="_blank"
+          >Soundcloud</a
+        >
+      </div>
+    </footer>
+    <script src="assets/js/jumpgame.js"></script>
+  </body>
+</html>
