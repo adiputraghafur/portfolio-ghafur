@@ -1,6 +1,7 @@
 const dino = document.getElementById("dino");
 const gameContainer = document.getElementById("game-container");
 const scoreDisplay = document.getElementById("score");
+const highScoreDisplay = document.getElementById("high-score");
 const finalScoreDisplay = document.getElementById("final-score");
 const startScreen = document.getElementById("start-screen");
 const gameOverScreen = document.getElementById("game-over-screen");
@@ -42,6 +43,7 @@ let gameLoopInterval;
 let obstacleSpawnInterval;
 let gameSpeed = 3;
 let maxObstacleIndex = 1;
+let currentHighScore = parseInt(localStorage.getItem("jumpGameHighScore")) || 0;
 function applyPhysics() {
   if (isGameOver) return;
   let dinoBottom = parseInt(
@@ -124,6 +126,11 @@ function gameOver() {
   clearInterval(obstacleSpawnInterval);
   const finalScore = Math.floor(score / 10);
   finalScoreDisplay.textContent = "Final Score: " + finalScore;
+  if (finalScore > currentHighScore) {
+    currentHighScore = finalScore;
+    localStorage.setItem("jumpGameHighScore", currentHighScore);
+    highScoreDisplay.textContent = "High Score: " + currentHighScore;
+  }
   document.querySelectorAll(".obstacle").forEach((c) => c.remove());
   const playerName = prompt("Game Over! Masukkan Nama Anda untuk Leaderboard:");
   if (playerName && playerName.trim() !== "") {
@@ -177,6 +184,7 @@ function startGame() {
   gameOverScreen.style.display = "none";
   startScreen.style.display = "none";
   startScreen.classList.remove("active");
+  highScoreDisplay.textContent = "High Score: " + currentHighScore;
   dino.style.bottom = "0px";
   gameLoopInterval = setInterval(gameLoop, 20);
   obstacleSpawnInterval = setInterval(spawnObstacle, 2000);
@@ -220,4 +228,5 @@ restartButton.addEventListener("click", startGame);
 document.addEventListener("DOMContentLoaded", () => {
   startScreen.classList.add("active");
   gameOverScreen.style.display = "none";
+  highScoreDisplay.textContent = "High Score: " + currentHighScore;
 });
