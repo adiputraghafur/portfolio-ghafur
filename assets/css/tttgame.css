@@ -1,0 +1,56 @@
+#tictactoe-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 2rem 5%;
+  background-color: var(--w);
+}
+#game-controls label {
+  margin-left: 1rem;
+}
+#player-symbol,
+#player-symbol-label,
+#difficulty,
+#difficulty-label {
+  display: none;
+}
+#status-display {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  border: 5px solid var(--g);
+}
+.cell {
+  background-color: var(--b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  cursor: pointer;
+  user-select: none;
+}
+.cell:hover {
+  background-color: var(--g);
+}
+.x-color {
+  color: var(--c1d);
+}
+.o-color {
+  color: var(--c2d);
+}
+#restart-button {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  background-color: var(--g);
+  color: var(--w);
+  border: none;
+  margin-top: 1rem;
+}

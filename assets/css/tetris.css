@@ -1,0 +1,34 @@
+#tetris-section {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.25rem;
+  padding: 2rem 5%;
+  background-color: var(--w);
+}
+#tetris-container {
+  display: flex;
+  gap: 1.25rem;
+  background-color: var(--b);
+  padding: 0.75rem;
+  border: 5px solid var(--g);
+}
+#game-board {
+  border: 1px solid var(--g);
+  background-color: var(--b);
+  width: 200px;
+  height: 400px;
+}
+#next-piece {
+  border: 1px solid var(--g);
+  width: 80px;
+  height: 80px;
+}
+#sidebar {
+  color: var(--w);
+  padding: 0.75rem;
+}
+#sidebar p {
+  font-size: 1.25rem;
+}

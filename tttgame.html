@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/tttgame.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <nav class="container">
+        <div class="logo">
+          <a href="gameindex.html">Ghafur</a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="menu-toggle"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links-menu">
+          <li><a href="gameindex.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="game-main">
+      <section id="tictactoe-section">
+        <h1 class="game-title">Tic-Tac-Toe</h1>
+        <div id="game-controls">
+          <label for="game-mode">Mode:</label>
+          <select name="game-mode" id="game-mode">
+            <option value="pvp">Player Vs Player</option>
+            <option value="pvc">Player Vs Com</option>
+          </select>
+          <label for="player-symbol" id="player-symbol-label">
+            Pilih Simbol:
+          </label>
+          <select name="player-symbol" id="player-symbol">
+            <option value="X">X</option>
+            <option value="O">O</option>
+          </select>
+          <label for="difficulty" id="difficulty-label">Kesulitan:</label>
+          <select name="difficulty" id="difficulty">
+            <option value="easy">Mudah</option>
+            <option value="medium">Sedang</option>
+            <option value="hard">Sulit</option>
+          </select>
+        </div>
+        <div id="status-display">Giliran Pemain: X</div>
+        <div id="game-board"></div>
+        <button id="restart-button">Restart Game</button>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2025 <a href="index.html">Ghafururrohim Adi Putra</a>. Dibangun
+        menggunakan 100% Vanilla HTML, CSS & JavaScript.
+      </p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/ghxfvr/" target="_blank"
+          >Instagram</a
+        >
+        |
+        <a href="https://soundcloud.com/ghxfvr_adi" target="_blank"
+          >Soundcloud</a
+        >
+      </div>
+    </footer>
+    <script src="assets/js/tttgame.js"></script>
+  </body>
+</html>

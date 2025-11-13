@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1, initial-scale=1.0" />
-    <title>Endless Jump Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Terminal</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/jumpgame.css" />
   </head>
   <body>
     <header id="main-header">
@@ -28,25 +27,15 @@
       </nav>
     </header>
     <main class="game-main">
-      <section id="jump-game-section">
-        <h1 class="game-title">Jump Jump!!!</h1>
-        <div id="game-container">
-          <div id="dino" class="running"></div>
-          <div id="score">Score: 0</div>
-          <div id="high-score">High Score: 0</div>
-          <div id="start-screen" class="active">
-            <p>Tekan **Space** atau **Ketuk** untuk Memulai</p>
-          </div>
-          <div id="game-over-screen">
-            <h2>Game Over</h2>
-            <p id="final-score"></p>
-            <button id="restart-button">Restart</button>
-            <div id="leaderboard"></div>
-          </div>
-        </div>
-        <p class="game-instruction">
-          Gunakan tombol **SPACE** (atau ketuk layar) untuk melompat.
-        </p>
+      <section class="game-main-section">
+        <h1>Selamat datang di terminal game sederhana</h1>
+        <p>Pilih game yang ingin dimainkan</p>
+        <ul class="game-list">
+          <li><a href="jumpgame.html">Jump Jump!!!</a></li>
+          <li><a href="snakegame.html">Snake Game</a></li>
+          <li><a href="tetris.html">Tetris</a></li>
+          <li><a href="tttgame.html">Tic-Tac-Toe</a></li>
+        </ul>
       </section>
     </main>
     <footer>
@@ -64,6 +53,5 @@
         >
       </div>
     </footer>
-    <script src="assets/js/jumpgame.js"></script>
   </body>
 </html>

@@ -2,10 +2,10 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1, initial-scale=1.0" />
-    <title>Endless Jump Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/jumpgame.css" />
+    <link rel="stylesheet" href="assets/css/snakegame.css" />
   </head>
   <body>
     <header id="main-header">
@@ -28,25 +28,11 @@
       </nav>
     </header>
     <main class="game-main">
-      <section id="jump-game-section">
-        <h1 class="game-title">Jump Jump!!!</h1>
-        <div id="game-container">
-          <div id="dino" class="running"></div>
-          <div id="score">Score: 0</div>
-          <div id="high-score">High Score: 0</div>
-          <div id="start-screen" class="active">
-            <p>Tekan **Space** atau **Ketuk** untuk Memulai</p>
-          </div>
-          <div id="game-over-screen">
-            <h2>Game Over</h2>
-            <p id="final-score"></p>
-            <button id="restart-button">Restart</button>
-            <div id="leaderboard"></div>
-          </div>
-        </div>
-        <p class="game-instruction">
-          Gunakan tombol **SPACE** (atau ketuk layar) untuk melompat.
-        </p>
+      <section id="snake-game-section">
+        <h1 class="game-title">Snake Game</h1>
+        <div id="score-board">Score: <span id="score">0</span></div>
+        <canvas id="game-area" width="400" height="400"></canvas>
+        <button id="start-button">Start Game</button>
       </section>
     </main>
     <footer>
@@ -64,6 +50,6 @@
         >
       </div>
     </footer>
-    <script src="assets/js/jumpgame.js"></script>
+    <script src="assets/js/snakegame.js"></script>
   </body>
 </html>
